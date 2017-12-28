@@ -531,21 +531,4 @@ class PlanningGraph():
                 if node in s_nodes:
                     level_sum += level
                     break
-        
-
-
-
-        # for goal in self.problem.goal:
-        #     goal_found = False
-        #     for level, s_levels in enumerate(self.s_levels):
-        #         for state in s_levels:
-        #             literal = expr(state.symbol)
-        #             if not state.is_pos:
-        #                 literal = '~' + literal
-        #             if literal == goal:
-        #                 goal_found = True
-        #                 level_sum += level
-        #                 break
-        #         if goal_found:
-        #             break
         return level_sum
